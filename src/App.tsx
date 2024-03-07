@@ -26,8 +26,8 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
 // Footer Component
 const Footer: React.FC = () => {
   return (
-    <div className="bg-slate-700 text-white p-1">
-      Footer
+    <div className="bg-slate-700 text-white p-1 flex justify-center text-sm">
+      Greenbrier Digital @2024 - Todos os direitos reservados.
     </div>
   );
 };
