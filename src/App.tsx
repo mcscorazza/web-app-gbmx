@@ -7,15 +7,16 @@ import SideMenu from './components/SideMenu';
 
 const Navbar: React.FC = () => {
   return (
-    <div className="bg-slate-700 h-20 text-white py-3 px-4 flex justify-between">
+    <div className="bg-slate-700 h-16 text-white py-3 px-4 flex justify-between">
       <img className='h-full' src='./gbmx.png' />
+      <h1 className=' text-3xl text-slate-400'>RELATÓRIO DE VIAGEM</h1>
       <div className='flex items-center gap-4'>
         <div className='block text-right'>
-          <span className='block text-md'>José da Silva</span>
+          <span className='block text-md'>Marcos Corazza</span>
           <span className='block cursor-pointer text-sm text-slate-400'>logout</span>
         </div>
 
-        <img src='miniatura.png' className=' rounded-full h-16' />
+        <img src='miniatura.jpg' className=' rounded-full h-12' />
       </div>
 
     </div>
@@ -38,7 +39,7 @@ const Footer: React.FC = () => {
 // App Component
 const App: React.FC = () => {
   // State for managing side menu visibility
-  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
   // Function to toggle side menu visibility
   const toggleSideMenu = () => {
