@@ -1,20 +1,23 @@
 
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import MainContent from './components/MainContent';
 import SideMenu from './components/SideMenu';
 
 // Navbar Component
-interface NavbarProps {
-  children?: ReactNode;
-}
 
-const Navbar: React.FC<NavbarProps> = ({ children }) => {
+const Navbar: React.FC = () => {
   return (
-    <div className="bg-slate-700 text-white p-2 flex justify-between">
-      {/* Render children inside the Navbar */}
-      {children}
+    <div className="bg-slate-700 h-20 text-white py-3 px-4 flex justify-between">
+      <img className='h-full' src='./gbmx.png' />
+      <div className='flex items-center gap-4'>
+        <div className='block text-right'>
+          <span className='block text-md'>José da Silva</span>
+          <span className='block cursor-pointer text-sm text-slate-400'>logout</span>
+        </div>
 
-      <img src='./gbmx.png' width={180} />
+        <img src='miniatura.png' className=' rounded-full h-16' />
+      </div>
+
     </div>
   );
 };
