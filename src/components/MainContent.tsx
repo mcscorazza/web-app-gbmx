@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowDownFromLine, ArrowUp, ArrowUpFromLine, Hash, LocateFixed } from 'lucide-react';
+import { ArrowDown, ArrowDownFromLine, ArrowLeft, ArrowLeftFromLine, ArrowRight, ArrowRightFromLine, ArrowUp, ArrowUpFromLine, Hash, LocateFixed } from 'lucide-react';
 import React from 'react';
 
 const MainContent: React.FC = () => {
@@ -77,30 +77,55 @@ const MainContent: React.FC = () => {
           <div className="grid h-full items-center grid-cols-4 grid-rows-[130px_280px_minmax(320px,_1fr)] gap-3 text-slate-300">
             <div className='h-full bg-slate-700 rounded shadow p-2'>
               <h1 className='text-2xl w-full text-center mb-2 font-bold'>Tração</h1>
-              <div className='flex flex-row w-full justify-around p-2 text-teal-300'>
-                <ArrowUp className='border rounded-md bg-teal-900 border-teal-800 p-1' size="60" />
-                <span className='text-5xl font-bold'>50 <small className='font-medium'>[tf]</small></span>
+              <div className='flex flex-row items-center justify-between h-20'>
+                <div className='flex flex-row w-full justify-around p-1 text-teal-300 '>
+                  <div className='border rounded-md bg-teal-900 border-teal-800 p-2 flex justify-center items-center'>
+                    <ArrowLeft size="30" />
+                    <ArrowRight size="30" />
+                  </div>
+                  <div className='text-4xl font-bold flex items-center'>-80</div>
+                  <div className='text-xl font-light flex items-center'>[tf]</div>
+                </div>
               </div>
             </div>
             <div className='h-full bg-slate-700 rounded shadow p-2'>
               <h1 className='text-2xl w-full text-center mb-2 font-bold'>Compressão</h1>
-              <div className='flex flex-row w-full justify-around p-2 text-red-300'>
-                <ArrowDown className='border rounded-md bg-red-900 border-red-800 p-1' size="60" />
-                <span className='text-5xl font-bold'>-150 <small className='font-medium'>[tf]</small></span>
+              <div className='flex flex-row items-center justify-between h-20'>
+                <div className='flex flex-row w-full justify-around p-1 text-red-300'>
+                  <div className='border rounded-md bg-red-900 border-red-800 p-2 flex justify-center items-center'>
+                    <ArrowRight size="30" />
+                    <ArrowLeft size="30" />
+                  </div>
+                  <div className='text-4xl font-bold flex items-center'>-80</div>
+                  <div className='text-xl font-light flex items-center'>[tf]</div>
+                </div>
               </div>
+
             </div>
             <div className='h-full bg-slate-700 rounded shadow p-2'>
               <h1 className='text-2xl w-full text-center mb-2 font-bold'>95% Tração</h1>
-              <div className='flex flex-row w-full justify-around p-2 text-teal-300'>
-                <ArrowUpFromLine className='border rounded-md bg-teal-900 border-teal-800 p-1' size="60" />
-                <span className='text-5xl font-bold'>40 <small className='font-medium'>[tf]</small></span>
+              <div className='flex flex-row items-center justify-between h-20'>
+                <div className='flex flex-row w-full justify-around p-1 text-teal-300'>
+                  <div className='border rounded-md bg-teal-900 border-teal-800 p-2 flex justify-center items-center'>
+                    <ArrowLeftFromLine size="30" />
+                    <ArrowRightFromLine size="30" />
+                  </div>
+                  <div className='text-4xl font-bold flex items-center'>-80</div>
+                  <div className='text-xl font-light flex items-center'>[tf]</div>
+                </div>
               </div>
             </div>
             <div className='h-full bg-slate-700 rounded shadow p-2'>
               <h1 className='text-2xl w-full text-center mb-2 font-bold'>95% Compressão</h1>
-              <div className='flex flex-row w-full justify-around p-2 text-red-300'>
-                <ArrowDownFromLine className='border rounded-md bg-red-900 border-red-800 p-1' size="60" />
-                <span className='text-5xl font-bold'>-80 <small className=' font-medium'>[tf]</small></span>
+              <div className='flex flex-row items-center justify-between h-20'>
+                <div className='flex flex-row w-full justify-around p-1 text-red-300'>
+                  <div className='border rounded-md bg-red-900 border-red-800 p-2 flex justify-center items-center'>
+                    <ArrowRightFromLine size="30" />
+                    <ArrowLeftFromLine size="30" />
+                  </div>
+                  <div className='text-4xl font-bold flex items-center'>-80</div>
+                  <div className='text-xl font-light flex items-center'>[tf]</div>
+                </div>
               </div>
             </div>
             <div className='h-full bg-slate-600 rounded shadow p-1 col-span-2'>
