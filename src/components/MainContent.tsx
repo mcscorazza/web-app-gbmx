@@ -144,7 +144,7 @@ const MainContent: React.FC = () => {
             </div>
 
             <div className='h-full bg-slate-600 rounded shadow p-2 col-span-4 overflow-hidden flex items-center justify-center'>
-              <img src="map.jpg" alt="" className='h-full rounded-md' />
+              <img src="map_dark.jpg" alt="" className='h-full rounded-md' />
             </div>
           </div>
         </div>
